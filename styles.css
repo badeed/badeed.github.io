@@ -23,3 +23,35 @@
 .navbar-dark .navbar-nav .nav-link:hover {
 	color: #badeed;
 }
+
+.about {
+	width: 100%;
+	display: flex;
+	padding: 100px 0;
+	background-color: #badeed;
+	height: 100vh;
+}
+
+.about .about-container {
+	padding-left: 25px;
+	margin: 75px;
+	height: 50%;
+	width: 100%;
+	display: inline-block;
+	background-color: wheat;
+	border: solid 1px;
+	border-radius: 16px;
+}
+
+.about .about-container .about-1 {
+	font-size: 26px;
+	font-weight: 450;
+}
+.about .about-container .about-2 {
+	font-size: 30px;
+	font-weight: 400;
+}
+.about .about-container .about-3 {
+	font-size: 26px;
+	font-weight: 600;
+}
