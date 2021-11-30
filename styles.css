@@ -198,7 +198,6 @@ div.background-img {
 	flex-flow: column;
 	padding: 100px 0;
 	background-color: #badeed;
-	height: 100vh;
 }
 .projects .title {
 	padding-left: 80px;
@@ -240,27 +239,33 @@ div.background-img {
 	width: 70%;
 }
 .grid-container .projects-container-2 .box {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	transition: all 0.3s ease;
 }
 .grid-container .projects-container-2:hover .box {
 	transform: scale(1.05);
 }
-.header {
-	grid-area: header;
+
+@media (max-width: 769px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 10px;
+	}
 }
 
-.article {
-	grid-area: article;
+.btn:link,
+.btn:visited {
+	background-color: #151145;
+	color: white;
+	padding: 5px 35px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 }
 
-.aside {
-	grid-area: aside;
-}
-
-.section {
-	grid-area: section;
-}
-
-.footer {
-	grid-area: footer;
+.btn:hover,
+.btn:active {
+	background-color: red;
 }
