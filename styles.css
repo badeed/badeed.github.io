@@ -303,3 +303,14 @@ div.background-img {
 		margin: auto;
 	}
 }
+
+.btn-primary {
+	border: 0.5px solid black;
+	background-color: green;
+	color: white;
+	border-radius: 3px;
+}
+.btn-primary:hover {
+	background-color: orange;
+	color: black;
+}
