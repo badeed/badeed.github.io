@@ -69,25 +69,30 @@
 					<h1 class="about-1">Hello,</h1>
 					<h2 class="about-2 auto-text-1">i am badeed</h2>
 					<p class="about-3 auto-text-2"></p>
-					<p class="about-4">
-						<ul class="about-4">
-              <li>Game Design</li>
-              <li>Software Engineer</li>
-              <li>System designs</li>
-              <li>Teacher</li>
-              <li>Gamer</li>
-              <li>Now a web dev</li>
-            </ul> 
-					</p>
+					<p class="about-4"></p>
+					<ul class="about-4 list">
+						<li>Game Design</li>
+						<li>Software Engineer</li>
+						<li>System designs</li>
+						<li>Teacher</li>
+						<li>Gamer</li>
+						<li>Now a web dev</li>
+					</ul>
 				</div>
-				<img src="/images/452n519.png" class="profile" alt="badeed's picture" />
+
+				<div class="myface">
+					<img
+						src="/images/452n519.png"
+						class="profile"
+						alt="badeed's picture"
+					/>
+				</div>
 			</div>
 		</section>
 
-
-    <!-- references https://devicon.dev/-->
+		<!-- references https://devicon.dev/-->
 		<section id="background" class="background">
-			<h1 class="mb-3">Background Knowledge</h1>
+			<h1 class="title">Background Knowledge</h1>
 			<div class="background-container">
 				<div class="background-img img1">
 					<img
@@ -175,7 +180,7 @@
 			</div>
 		</section>
 		<section class="projects" id="projects">
-			<h2 class="title d-flex justify-content-between">Recent Projects</h2>
+			<h2 class="title">Recent Projects</h2>
 			<div class="grid-container projects-container33">
 				<div class="projects-container-2 proj-1">
 					<div class="box">
@@ -185,7 +190,9 @@
 							alt="Game Jam GIF"
 						/>
 						<h4 class="projects-1">Dungeon JAM</h4>
-						<a class = "btn" href="https://github.com/badeed/Level-JJAMM">Github Link</a>
+						<a class="btn" href="https://github.com/badeed/Level-JJAMM"
+							>Github Link</a
+						>
 					</div>
 				</div>
 				<div class="projects-container-2 proj-2">
@@ -196,10 +203,52 @@
 							alt="Among us Teabagging mod GIF"
 						/>
 						<h4 class="projects-2">Among us Teabagging/jumping Mod</h4>
-						<a class = "btn" href="#about">WIP</a>
+						<a class="btn" href="#about">WIP</a>
 					</div>
 				</div>
 			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<h2 class="title">Contact me</h2>
+			<form class="form row">
+				<div class="row">
+					<div class="form-group col">
+						<label for="firstName">First name</label><br />
+						<input
+							type="text"
+							id="firstName"
+							name="firstName"
+							class="form-control"
+						/>
+					</div>
+
+					<div class="form-group col">
+						<label for="lastName">Last name</label><br />
+						<input
+							type="text"
+							id="lastName"
+							name="lastName"
+							class="form-control"
+						/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="email-label" for="email">Email</label><br />
+					<input type="email" id="email" name="email" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label class="message-label" for="message">Enter your message:</label
+					><br />
+					<textarea class="form-control" id="message" rows="3"></textarea>
+				</div>
+				<div class="button-group row">
+					<div class="col text-center">
+						<input class="btn btn-primary" type="submit" value="Submit" />
+						<input class="btn btn-primary" type="reset" value="Reset" />
+					</div>
+				</div>
+			</form>
 		</section>
 	</body>
 </html>

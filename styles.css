@@ -3,7 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
 .navbar-dark .navbar-nav .nav-item {
 	padding-left: 5px;
 	padding-right: 5px;
@@ -29,17 +34,20 @@
 	display: flex;
 	flex-flow: column;
 	padding: 100px 0;
+	text-align: left;
 	background-color: #badeed;
-	height: 100vh;
 }
-.about .title {
-	padding-left: 80px;
+
+.title {
+	padding-left: 20px;
+	text-align: center;
+	font-size: 38px;
 }
 .about .about-container-1 {
-	padding-left: 2px;
-	margin-left: 75px;
-	height: 75%;
-	width: 80%;
+	padding-left: 20px;
+	margin-left: 35px;
+	height: 70%;
+	width: 95%;
 	display: flex;
 	background-color: wheat;
 	border: solid 1px;
@@ -67,7 +75,7 @@
 	font-weight: 400;
 }
 .about .about-container-2 .about-3 {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 600;
 }
 
@@ -76,7 +84,7 @@
 	font-weight: 600;
 	display: none;
 }
-/* Experience Section */
+
 .background {
 	padding: 80px;
 }
@@ -133,26 +141,6 @@ div.background-img {
 	grid-area: unity;
 }
 
-@media (max-width: 414px) {
-	.background-container {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(12, 1fr);
-
-		grid-template-areas:
-			'c'
-			'cpp'
-			'csharp'
-			'css'
-			'chrome'
-			'javascript'
-			'salesforce'
-			'vscode'
-			'java'
-			'python'
-			'unity';
-	}
-}
-
 @media (min-width: 415px) and (max-width: 768px) {
 	.background-container {
 		grid-template-columns: repeat(6, 1fr);
@@ -164,7 +152,15 @@ div.background-img {
 	}
 }
 
-@media (max-width: 851px) {
+@media (min-width: 769px) {
+	.background-container {
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 1fr;
+
+		grid-template-areas: 'cpp    c   csharp  css chrome  html5   javascript  salesforce  vscode  java    python  unity';
+	}
+}
+@media (max-width: 953px) {
 	.about .about-container-1 .profile {
 		display: none;
 	}
@@ -179,15 +175,16 @@ div.background-img {
 		display: block;
 	}
 }
-@media (min-width: 769px) {
-	.background-container {
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 1fr;
 
-		grid-template-areas: 'cpp    c   csharp  css chrome  html5   javascript  salesforce  vscode  java    python  unity';
-	}
+@media (min-width: 929px) and (max-width: 1154px) {
 	.about .about-container-1 .about-3 {
-		font-size: 17px;
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+@media (min-width: 580px) and (max-width: 928px) {
+	.about .about-container-1 .about-3 {
+		font-size: 20px;
 		font-weight: 600;
 	}
 }
@@ -205,7 +202,9 @@ div.background-img {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 3fr 3fr;
+	padding-left: 50px;
+	grid-template-rows: 1fr;
 	gap: 10px;
 	text-align: center;
 }
@@ -223,14 +222,14 @@ div.background-img {
 }
 
 .projects .projects-container-2 {
-	margin: 30px;
-	height: 580px;
-	width: 80%;
+	height: 600px;
+	width: 90%;
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: column;
 	background-color: wheat;
-	border: solid 2px;
+	border: solid 2px rebeccapurple;
 	border-radius: 16px;
+	gap: 10px;
 }
 
 .projects .projects-container-2 .proj-img {
@@ -241,18 +240,12 @@ div.background-img {
 .grid-container .projects-container-2 .box {
 	padding-top: 10px;
 	padding-bottom: 10px;
+
+	width: 100%;
 	transition: all 0.3s ease;
 }
 .grid-container .projects-container-2:hover .box {
 	transform: scale(1.05);
-}
-
-@media (max-width: 769px) {
-	.grid-container {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
-		gap: 10px;
-	}
 }
 
 .btn:link,
@@ -268,4 +261,45 @@ div.background-img {
 .btn:hover,
 .btn:active {
 	background-color: red;
+}
+
+.contact {
+	height: 400px;
+}
+
+.contact .form {
+	text-align: center;
+	border: solid 1px;
+	border-radius: 16px;
+}
+
+.form-group {
+	text-align: left;
+}
+
+@media (max-width: 869px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 10px;
+	}
+}
+
+@media (min-width: 414px) {
+	.form {
+		width: 400px;
+		margin: auto;
+	}
+}
+@media (min-width: 768px) {
+	.form {
+		width: 600px;
+		margin: auto;
+	}
+}
+@media (min-width: 869px) {
+	.form {
+		width: 800px;
+		margin: auto;
+	}
 }

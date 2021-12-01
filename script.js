@@ -1,6 +1,5 @@
 $(document).ready(function (event) {
 	let i = 0;
-	let startNext = 0;
 	let header = document.querySelector('.auto-text-1');
 	let anim = [
 		{ t: 'W', ms: 700 },
@@ -31,7 +30,9 @@ $(document).ready(function (event) {
 		{ t: 'i am badeed|', ms: 200 },
 		{ t: 'i am badeed', ms: 200 },
 		{ t: 'i am badeed.', ms: 2000 },
-		{ t: 'i am badeed. :)', ms: 200 },
+		{ t: 'i am badeed. :)', ms: 10000 },
+		{ t: 'i am badeed. ;)', ms: 1000 },
+		{ t: 'i am badeed. :)', ms: 500 },
 	];
 
 	let update = () => {
@@ -58,7 +59,7 @@ $(document).ready(function (event) {
 		if (j < about.length) {
 			document.querySelector('.auto-text-2').innerHTML += about.charAt(j);
 			j++;
-			setTimeout(updateAbout, 50);
+			setTimeout(updateAbout, 25);
 		}
 	};
 });
