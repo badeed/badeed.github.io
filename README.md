@@ -2,21 +2,26 @@
 
 ## Development journal
 
-I did research on navbars and how they work to get a better understanding than i currently have and decided to implement a logo in my nav bar.
+Repo: https://github.com/badeed/badeed.github.io
 
-I remember seeing some text look like it was "typed" in the browser researched it and found "setTimeout" help with making text look typed.
+Pagelink:https://badeed.github.io/
 
-While looking for images to put for background experince i found a css library "devicon", which has almost all the icons for devs. Ended up using it.
+I did research on navbars and how they work to get a better understanding than I currently have and decided to implement a logo in my nav bar.
 
-As i was doing this i trying to find how to do small things like display a gif, i found a lot of cool things i want to try to add. CSS Animations look cool.
+I remember seeing some text that looked like it was "typed" in the browser. I researched it and found "setTimeout" helps with making text look typed.
 
-There is so much i wish i could have done, but i was so busy. I didnt have time. I wanted to do CSS animations, i wanted to fetch data from exernals soruces using API.
+While looking for images to put for background experience i found a css library "devicon", which has almost all the icons for devs. Ended up using it.
 
-I wanted to add more buttons and interactivity, i am not satisified with the end result but the end result meet the requirments of the project.
+As i was doing this I was trying to find how to do small things like display a gif, i found a lot of cool things i want to try to add. CSS Animations look cool.
 
-Most of the issues i faced with formatting issues and CSS stuff. I wanted things to look a specific way but it was sometimes hard to get them to look exactly how i wanted.
+There is so much I wish I could have done, but I was so busy. I didn't have time. I wanted to do CSS animations, I wanted to fetch data from external sources using API.
+
+I wanted to add more buttons and interactivity. I am not satisfied with the end result but the end result meets the requirements of the project.
+
+Most of the issues I faced with formatting issues and CSS stuff. I wanted things to look a specific way but it was sometimes hard to get them to look exactly how I wanted.
 
 I used the background color #badeed for this project because... i am badeed
+
 
 
 ## References
