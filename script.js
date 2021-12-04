@@ -51,7 +51,6 @@ $(document).ready(function (event) {
 		}
 	};
 	update();
-	//https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
 	var about =
 		'I am on my path to becoming a software engineer. I have years of experince developing and using code. I am from Kuwait, i started programmering and coding since i was 14 years old. I got into it because i wanted to modify and edit my own games. Now I make games, and design them. I also make macros and bots that can ease tasks. I like creating new things out of nothing. Coding was able to give me that ability. Also i am a gamer my favorite game is League of Legends. I am Muhsen Saleh';
 	var j = 0;
