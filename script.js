@@ -30,9 +30,9 @@ $(document).ready(function (event) {
 		{ t: 'i am badeed|', ms: 200 },
 		{ t: 'i am badeed', ms: 200 },
 		{ t: 'i am badeed.', ms: 2000 },
-		{ t: 'i am badeed. :)', ms: 10000 },
-		{ t: 'i am badeed. ;)', ms: 1000 },
-		{ t: 'i am badeed. :)', ms: 500 },
+		{ t: 'i am badeed.', ms: 10000 },
+		{ t: 'i am badeed.', ms: 1000 },
+		{ t: 'i am badeed.', ms: 500 },
 	];
 
 	let update = () => {
@@ -52,7 +52,7 @@ $(document).ready(function (event) {
 	};
 	update();
 	var about =
-		'I am on my path to becoming a software engineer. I have years of experince developing and using code. I am from Kuwait, i started programmering and coding since i was 14 years old. I got into it because i wanted to modify and edit my own games. Now I make games, and design them. I also make macros and bots that can ease tasks. I like creating new things out of nothing. Coding was able to give me that ability. Also i am a gamer my favorite game is League of Legends. I am Muhsen Saleh';
+		'I am on my path to becoming a software engineer. I have years of experince developing and using code. I am from Kuwait, i started programmering and coding since i was 14 years old. I got into it because i wanted to modify and edit my own games. Now I make games, and design them. I also make macros and bots that can ease tasks. I like creating new things out of nothing. Coding was able to give me that ability.';
 	var j = 0;
 	let updateAbout = () => {
 		if (j < about.length) {
