@@ -52,6 +52,7 @@ body {
 	background-color: wheat;
 	border: solid 1px;
 	border-radius: 16px;
+	position: relative;
 }
 .about .about-container-1 .profile {
 	width: 400px;
@@ -60,11 +61,19 @@ body {
 	border-radius: 50%;
 }
 
-.about .about-container-1 .hecPic {
+.about .about-container-1 .hecarim .hecPic {
 	width: 100px;
 	height: 100px;
-	float: left;
-	border-radius: 50%;
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+}
+.about .about-container-1 .skarner .skarPic {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	right: 0%;
 }
 
 .about .about-container-2 {
