@@ -59,6 +59,14 @@ body {
 	margin-top: 50px;
 	border-radius: 50%;
 }
+
+.about .about-container-1 .hecPic {
+	width: 100px;
+	height: 100px;
+	float: left;
+	border-radius: 50%;
+}
+
 .about .about-container-2 {
 	padding-left: 20px;
 	width: 100%;
